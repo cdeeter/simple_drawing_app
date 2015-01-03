@@ -50,6 +50,12 @@ $("#addNewColor").click(function (){
   $newColor.click();
 });
 
+$(".change-line").change(function() {
+    $(".linesizenum").text($(this).val());
+    context.lineWidth = $(".change-line").val();
+});
+
+
 
 //On mouse events on the canvas
 $canvas.mousedown(function(e) {
@@ -74,6 +80,16 @@ $canvas.mousedown(function(e) {
 
 //clear canvas
 $(".clear").click(function() {
-
+    context.canvas.width = context.canvas.width
+        $(".change-line").val('1'); 
+    $(".linesizenum").text('1');
 });
 
+
+$(".directions").mouseover(function() {
+    $(".popup").fadeIn();
+});
+
+$(".directions").mouseleave(function() {
+    $(".popup").fadeOut();
+});

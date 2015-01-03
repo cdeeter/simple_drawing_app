@@ -5,12 +5,28 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
 </head>
 <body>
-	<canvas	width="600" height="400"></canvas>
+    <h2>Sketch Pad App</h2>
+    <div class="explanation">
+    <span class="directions">
+        <b>What do I do???</b>
+    </span><br/>
+    <div class="popup"><br/><b>To draw: </b>Hold down your mouse on the canvas and move it to create a line.<br/><br/>
+    <b>To pick a color: </b>Select one or create your own by clicking "New Color", adjusting the ranges until you find the color you want, and clicking "Add Color" to add it to the color list.<br/><br/>
+    <b>To adjust the line width:</b> Use the range on the bottom right of the canvas.<Br/><Br/>
+        <b>To erase lines:</b> Click "New Color", slide all the ranges all the way to the right (to create "white" color), and click "Add Color").<br/><br/>
+    <b>To clear the canvas: </b>Click "Clear Canvas" at the bottom of the canvas.<br/><br/>
+            Have fun! :)</div>
+    </div>
+	<canvas	width="600" height="475"></canvas>
+    <div class="line-size">
+        <input type="range" min=1 max=20 value=1 class="change-line"><br/>
+        Line width: <span class="linesizenum">1</span>
+    </div>
 	<div class= "clear">
-		Clear Canvas
+		&nbsp; &nbsp;Clear Canvas
 	</div>
 	<div class="controls">
-		<ul>
+		<ul class="colors">
 			<li class="red selected"></li>
 			<li class="blue"></li>
 			<li class="yellow"></li>
